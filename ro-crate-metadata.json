@@ -22,13 +22,14 @@
     {
       "@id": "http://data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz",
       "@type": "DataDownload",
-      "contentSize": "418941181",
+      "contentSize": 418941181,
       "path": "https://repository.mygrid.org.uk/artifactory/data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz",
       "datePublished": "2016-06-10T11:00:00.000Z",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
-      "name": "ims-linksets-2.1.tar.gz"
+      "name": "ims-linksets-2.1.tar.gz",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://doi.org/10.1093/nar/gks1065",
@@ -68,7 +69,7 @@
           "@id": "https://zenodo.org/record/4707733/files/surechembl_mesh.ttl.gz"
         },
         {
-          "@id": "https://zenodo.org/record/4707733/files/void.ttl.gz"
+          "@id": "https://zenodo.org/record/4707733/files/void.ttl"
         }
       ],
       "license": {
@@ -910,53 +911,65 @@
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
       "@type": "DataDownload",
+      "contentSize": 235847,
       "encodingFormat": "application/java-archive",
-      "name": "ops-chembl-linksets-20.1.1.jar"
+      "name": "ops-chembl-linksets-20.1.1.jar",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
       "@type": "DataDownload",
+      "contentSize": 6256190,
       "encodingFormat": "application/java-archive",
-      "name": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
+      "name": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
       "@type": "DataDownload",
+      "contentSize": 3375446,
       "encodingFormat": "application/java-archive",
-      "name": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
+      "name": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
       "@type": "DataDownload",
+      "contentSize": 462652,
       "encodingFormat": [
         "application/vnd.wf4ever.robundle+zip",
         {
           "@id": "https://w3id.org/bundle/"
         }
       ],
-      "name": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
+      "name": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
       "@type": "DataDownload",
+      "contentSize": 44705311,
       "encodingFormat": [
         "application/vnd.wf4ever.robundle+zip",
         {
           "@id": "https://w3id.org/bundle/"
         }
       ],
-      "name": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
+      "name": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
       "@type": "DataDownload",
+      "contentSize": 184062705,
       "encodingFormat": [
         "application/vnd.wf4ever.robundle+zip",
         {
           "@id": "https://w3id.org/bundle/"
         }
       ],
-      "name": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
+      "name": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops",
@@ -1173,7 +1186,7 @@
     {
       "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip",
       "@type": "DataDownload",
-      "contentSize": "413624342",
+      "contentSize": 413624342,
       "path": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip",
       "datePublished": "2021-04-19T23:00:00.000Z",
       "description": "BagIt ZIP archive of the Research Object ops-linksets-2.1.1",
@@ -1184,12 +1197,13 @@
       "name": "ops-linksets-2.1.1.ro-crate.zip",
       "publisher": {
         "@id": "https://zenodo.org/"
-      }
+      },
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://zenodo.org/record/4707733/files/ops-surechembl-linksets-0.1.0.data.zip",
       "@type": "DataDownload",
-      "contentSize": "158900",
+      "contentSize": 158900,
       "path": "https://zenodo.org/record/4707733/files/ops-surechembl-linksets-0.1.0.data.zip",
       "encodingFormat": [
         "application/vnd.wf4ever.robundle+zip",
@@ -1200,34 +1214,41 @@
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
       },
-      "name": "ops-surechembl-linksets-0.1.0.data.zip"
+      "name": "ops-surechembl-linksets-0.1.0.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://zenodo.org/record/4707733/files/surechembl_hgnc.ttl.gz",
       "@type": "File",
+      "contentSize": 118297,
       "dateModified": "2016-04-18T16:59:36+0100",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
       },
-      "name": "surechembl_hgnc.ttl.gz"
+      "name": "surechembl_hgnc.ttl.gz",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://zenodo.org/record/4707733/files/surechembl_mesh.ttl.gz",
       "@type": "File",
+      "contentSize": 42681,
       "dateModified": "2016-04-18T16:59:36+0100",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
       },
-      "name": "surechembl_mesh.ttl.gz"
+      "name": "surechembl_mesh.ttl.gz",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
-      "@id": "https://zenodo.org/record/4707733/files/void.ttl.gz",
+      "@id": "https://zenodo.org/record/4707733/files/void.ttl",
       "@type": "File",
+      "contentSize": 10134,
       "dateModified": "2016-04-18T16:59:36+0100",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
       },
-      "name": "void.ttl.gz"
+      "name": "void.ttl",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     }
   ]
 }
