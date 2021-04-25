@@ -1,0 +1,8 @@
+linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/conceptwiki/chemspider.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/conceptwiki/rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/conceptwiki/www_uniprot_org_uniprot-protein.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/conceptwiki/www_uniprot_org_uniprot-gene.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_CHEMBL20151104.ttl.gz filter=lfs diff=lfs merge=lfs -text
+linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz filter=lfs diff=lfs merge=lfs -text
