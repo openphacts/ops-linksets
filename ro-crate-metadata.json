@@ -872,8 +872,58 @@
       "distribution": {
         "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
       },
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_complextarget_targetcmpt_ls.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_grouptarget_targetcmpt_ls.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_molecule_chebi_ls.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_singletarget_targetcmpt_ls.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_targetcmpt_uniprot_ls.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-chembl-linksets/void.ttl"
+        }
+      ],
       "name": "ops-chembl-linksets",
       "url": "https://github.com/openphacts/ops-chembl-linksets"
+    },
+    {
+      "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_complextarget_targetcmpt_ls.ttl.gz",
+      "@type": "File",
+      "name": "chembl_20.1_complextarget_targetcmpt_ls.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_grouptarget_targetcmpt_ls.ttl.gz",
+      "@type": "File",
+      "name": "chembl_20.1_grouptarget_targetcmpt_ls.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_molecule_chebi_ls.ttl.gz",
+      "@type": "File",
+      "name": "chembl_20.1_molecule_chebi_ls.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_singletarget_targetcmpt_ls.ttl.gz",
+      "@type": "File",
+      "name": "chembl_20.1_singletarget_targetcmpt_ls.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_targetcmpt_uniprot_ls.ttl.gz",
+      "@type": "File",
+      "name": "chembl_20.1_targetcmpt_uniprot_ls.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-chembl-linksets/void.ttl",
+      "@type": "File",
+      "name": "void.ttl"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/",
@@ -882,8 +932,170 @@
       "distribution": {
         "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
       },
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ccds.inferred_from_transcript.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_dataset.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ena.embl.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_hgnc.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_hgnc.direct.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_insdc.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_mirbase.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_mirbase.misc.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ncbigene.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ncbigene.direct.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_pdb.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_refseq.inferred_from_transcript.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_refseq.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.direct.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.misc.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.sequence_match.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_uniprot.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_wikigenes.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_wikigenes.direct.LS.ttl.gz"
+        }
+      ],
       "name": "ops-ensembl-homosapiens-linksets",
       "url": "https://github.com/openphacts/ops-ensembl-linksets"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ccds.inferred_from_transcript.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_ccds.inferred_from_transcript.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_dataset.void.ttl",
+      "@type": "File",
+      "name": "Ensembl_Hs_dataset.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ena.embl.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_ena.embl.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_hgnc.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_hgnc.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_hgnc.direct.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_hgnc.direct.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_insdc.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_insdc.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_mirbase.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_mirbase.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_mirbase.misc.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_mirbase.misc.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ncbigene.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_ncbigene.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ncbigene.direct.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_ncbigene.direct.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_pdb.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_pdb.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_refseq.inferred_from_transcript.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_refseq.inferred_from_transcript.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_refseq.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_refseq.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_unigene.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.direct.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_unigene.direct.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.misc.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_unigene.misc.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.sequence_match.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_unigene.sequence_match.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_uniprot.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_uniprot.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_wikigenes.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_wikigenes.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_wikigenes.direct.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Hs_wikigenes.direct.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/",
@@ -892,18 +1104,166 @@
       "distribution": {
         "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
       },
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ccds.inferred_from_transcript.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_dataset.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ena.embl.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_insdc.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_mirbase.direct.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_mirbase.misc.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ncbigene.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_pdb.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_refseq.inferred_from_transcript.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_refseq.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.dependent.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.direct.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.misc.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.sequence_match.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_uniprot.inferred_from_translation.LS.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_wikigenes.dependent.LS.ttl.gz"
+        }
+      ],
       "name": "ops-ensembl-musmusculus-linksets",
       "url": "https://github.com/openphacts/ops-ensembl-linksets"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ccds.inferred_from_transcript.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_ccds.inferred_from_transcript.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_dataset.void.ttl",
+      "@type": "File",
+      "name": "Ensembl_Mm_dataset.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ena.embl.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_ena.embl.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_insdc.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_insdc.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_mirbase.direct.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_mirbase.direct.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_mirbase.misc.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_mirbase.misc.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ncbigene.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_ncbigene.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_pdb.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_pdb.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_refseq.inferred_from_transcript.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_refseq.inferred_from_transcript.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_refseq.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_refseq.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_unigene.dependent.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.direct.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_unigene.direct.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.misc.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_unigene.misc.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.sequence_match.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_unigene.sequence_match.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_uniprot.inferred_from_translation.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_uniprot.inferred_from_translation.LS.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_wikigenes.dependent.LS.ttl.gz",
+      "@type": "File",
+      "name": "Ensembl_Mm_wikigenes.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-hgnc-linkset/",
       "@type": "Dataset",
       "dateModified": "2016-04-19T10:10:15.000Z",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-hgnc-linkset/hgnc-to-hgnc.symbol-linkset.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-hgnc-linkset/void.ttl"
+        }
+      ],
       "license": {
         "@id": "https://www.genenames.org/about/"
       },
       "name": "ops-hgnc-linkset",
       "url": "https://github.com/openphacts/ops-hgnc-linkset"
+    },
+    {
+      "@id": "linksets/data/ops-hgnc-linkset/hgnc-to-hgnc.symbol-linkset.ttl.gz",
+      "@type": "File",
+      "name": "hgnc-to-hgnc.symbol-linkset.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-hgnc-linkset/void.ttl",
+      "@type": "File",
+      "name": "void.ttl"
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/",
@@ -912,11 +1272,101 @@
       "distribution": {
         "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
       },
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.void.ttl"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.void.ttl"
+        }
+      ],
       "license": {
         "@id": "https://hmdb.ca/citing"
       },
       "name": "ops-hmdb-linksets",
       "url": "https://github.com/openphacts/ops-hmdb-linksets"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls.void.ttl",
+      "@type": "File",
+      "name": "hmdb_ls.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.ttl.gz",
+      "@type": "File",
+      "name": "hmdb_ls_cas.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.void.ttl",
+      "@type": "File",
+      "name": "hmdb_ls_cas.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.ttl.gz",
+      "@type": "File",
+      "name": "hmdb_ls_chemspider.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.void.ttl",
+      "@type": "File",
+      "name": "hmdb_ls_chemspider.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.ttl.gz",
+      "@type": "File",
+      "name": "hmdb_ls_kegg.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.void.ttl",
+      "@type": "File",
+      "name": "hmdb_ls_kegg.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.ttl.gz",
+      "@type": "File",
+      "name": "hmdb_ls_pubchem.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.void.ttl",
+      "@type": "File",
+      "name": "hmdb_ls_pubchem.void.ttl"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.ttl.gz",
+      "@type": "File",
+      "name": "hmdb_ls_wp.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.void.ttl",
+      "@type": "File",
+      "name": "hmdb_ls_wp.void.ttl"
     },
     {
       "@id": "linksets/data/ops-rsc-linksets/",
@@ -925,11 +1375,473 @@
       "distribution": {
         "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
       },
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/void_2015-11-04.ttl"
+        }
+      ],
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-3.0"
       },
       "name": "ops-rsc-linksets",
       "url": "https://github.com/openphacts/ops-rsc-linksets"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_EXACT_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_EXACT_OPS_CHEMSPIDER_CHEBI20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEBI20151104.ttl.gz"
+        }
+      ],
+      "name": "CHEBI"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_EXACT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_EXACT_OPS_CHEMSPIDER_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEBI/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEBI20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEBI20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEMBL20151104.ttl.gz"
+        }
+      ],
+      "name": "CHEMBL"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEMBL20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEMBL20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_EXACT_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_EXACT_OPS_CHEMSPIDER_DRUGBANK20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_DRUGBANK20151104.ttl.gz"
+        }
+      ],
+      "name": "DRUGBANK"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_EXACT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_EXACT_OPS_CHEMSPIDER_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/DRUGBANK/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_DRUGBANK20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_DRUGBANK20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_EXACT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_EXACT_OPS_CHEMSPIDER_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+        }
+      ],
+      "name": "HUMAN_METABOLOME_DATABASE"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_EXACT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_EXACT_OPS_CHEMSPIDER_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/HUMAN_METABOLOME_DATABASE/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_HUMAN_METABOLOME_DATABASE20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_EXACT_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_EXACT_OPS_CHEMSPIDER_MESH20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_MESH20151104.ttl.gz"
+        }
+      ],
+      "name": "MESH"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_EXACT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_EXACT_OPS_CHEMSPIDER_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/MESH/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_MESH20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_MESH20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/",
+      "@type": "Dataset",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_EXACT_OPS_CHEMSPIDER_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_EXACT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_PDB20151104.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_RELATED_PDB20151104.ttl.gz"
+        }
+      ],
+      "name": "PDB"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_STEREO_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_TAUTOMER_INSENSITIVE_PARENT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_EXACT_OPS_CHEMSPIDER_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_EXACT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_EXACT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/PDB/LINKSET_RELATED_PDB20151104.ttl.gz",
+      "@type": "File",
+      "name": "LINKSET_RELATED_PDB20151104.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-linksets/void_2015-11-04.ttl",
+      "@type": "File",
+      "name": "void_2015-11-04.ttl"
     },
     {
       "@id": "linksets/data/ops-rsc-surechembl-linksets/",
