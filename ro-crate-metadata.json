@@ -2,6 +2,61 @@
   "@context": "https://w3id.org/ro/crate/1.1/context",
   "@graph": [
     {
+      "@id": "#b056546b-46f1-4204-8e42-8625f07c1294",
+      "@type": "ContactPoint",
+      "email": "soiland-reyes@manchester.ac.uk",
+      "name": "Email Stian Soiland-Reyes"
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "author": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "citation": [
+        {
+          "@id": "https://doi.org/10.3233/SW-2012-0088"
+        },
+        {
+          "@id": "http://ceur-ws.org/Vol-951/paper5.pdf"
+        }
+      ],
+      "contactPoint": {
+        "@id": "#b056546b-46f1-4204-8e42-8625f07c1294"
+      },
+      "datePublished": "2021-04-25T10:00:00.000Z",
+      "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\nRepublished, previously published on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load.xml which has relative URIs within this RO-Crate.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 and therefore linked by reference through separate Zenodo deposit.",
+      "distribution": {
+        "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip"
+      },
+      "funder": {
+        "@id": "https://ror.org/019af4n30"
+      },
+      "hasPart": [
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data"
+        },
+        {
+          "@id": "load.xml"
+        },
+        {
+          "@id": "linksets/"
+        }
+      ],
+      "identifier": "https://doi.org/10.5281/zenodo.4704867",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
+      },
+      "name": "OpenPHACTS Linksets 2.1.1",
+      "publisher": {
+        "@id": "https://ror.org/027m9bs27"
+      },
+      "url": "https://github.com/openphacts/ops-linksets"
+    },
+    {
       "@id": "http://ceur-ws.org/Vol-951/",
       "@type": "PublicationVolume",
       "alternateName": "Proceedings of the Second International Workshop on Linked Science 2012 - Tackling Big Data",
@@ -86,59 +141,363 @@
       "url": "https://hmdb.ca/citing"
     },
     {
-      "@id": "./",
-      "@type": "Dataset",
-      "author": {
-        "@id": "https://orcid.org/0000-0001-9842-9718"
+      "@id": "https://orcid.org/0000-0001-9842-9718",
+      "@type": "Person",
+      "affiliation": {
+        "@id": "https://ror.org/027m9bs27"
       },
-      "citation": [
+      "email": "soiland-reyes@manchester.ac.uk",
+      "familyName": "Soiland-Reyes",
+      "givenName": "Stian",
+      "name": "Stian Soiland-Reyes"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz",
+      "@type": "File",
+      "encodingFormat": "",
+      "name": "mysql-for-ims-2.1-20160419.sql.gz"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
+      "@type": "DataDownload",
+      "contentSize": 235847,
+      "encodingFormat": "application/java-archive",
+      "name": "ops-chembl-linksets-20.1.1.jar",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "@type": "DataDownload",
+      "contentSize": 6256190,
+      "encodingFormat": "application/java-archive",
+      "name": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "@type": "DataDownload",
+      "contentSize": 3375446,
+      "encodingFormat": "application/java-archive",
+      "name": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
+      "@type": "DataDownload",
+      "contentSize": 462652,
+      "encodingFormat": [
+        "application/vnd.wf4ever.robundle+zip",
         {
-          "@id": "https://doi.org/10.3233/SW-2012-0088"
-        },
-        {
-          "@id": "http://ceur-ws.org/Vol-951/paper5.pdf"
+          "@id": "https://w3id.org/bundle/"
         }
       ],
-      "contactPoint": {
-        "@id": "#b056546b-46f1-4204-8e42-8625f07c1294"
-      },
-      "datePublished": "2021-04-25T10:00:00.000Z",
-      "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\nRepublished, previously published on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load.xml which has relative URIs within this RO-Crate.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 and therefore linked by reference through separate Zenodo deposit.",
-      "distribution": {
-        "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip"
-      },
-      "funder": {
-        "@id": "https://ror.org/019af4n30"
-      },
-      "hasPart": [
+      "name": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
+      "@type": "DataDownload",
+      "contentSize": 44705311,
+      "encodingFormat": [
+        "application/vnd.wf4ever.robundle+zip",
         {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data"
-        },
-        {
-          "@id": "load.xml"
-        },
-        {
-          "@id": "linksets/"
+          "@id": "https://w3id.org/bundle/"
         }
       ],
-      "identifier": "https://doi.org/10.5281/zenodo.4704867",
+      "name": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
+      "@type": "DataDownload",
+      "contentSize": 184062705,
+      "encodingFormat": [
+        "application/vnd.wf4ever.robundle+zip",
+        {
+          "@id": "https://w3id.org/bundle/"
+        }
+      ],
+      "name": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops",
+      "@type": "RepositoryCollection",
+      "hasMember": [
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
+        }
+      ],
+      "name": "ops Maven repository",
+      "title": "ops Maven repository"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data",
+      "@type": "RepositoryCollection",
+      "hasMember": [
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/ims-linksets-2.1.tar.gz"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz"
+        },
+        {
+          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/linksets"
+        }
+      ],
+      "description": "The Open PHACTS data repository was previously hosted on data.openphacts.org, now partially mirrored at https://repository.mygrid.org.uk/",
+      "name": "data.openphacts.org repository",
+      "publisher": [
+        {
+          "@id": "https://ror.org/027m9bs27"
+        },
+        {
+          "@id": "https://ror.org/008xxew50"
+        },
+        {
+          "@id": "https://www.openphactsfoundation.org/"
+        }
+      ],
+      "title": "data.openphacts.org repository"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/ims-linksets-2.1.tar.gz",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/ims-linksets-2.1.tar.gz"
+      },
+      "name": "ims-linksets-2.1.tar.gz",
+      "title": "ims-linksets-2.1.tar.gz"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/linksets",
+      "@type": "RepositoryObject",
+      "name": "2.1/ims/linksets",
+      "title": "2.1/ims/linksets"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz"
+      },
+      "name": "mysql-for-ims-2.1-20160419.sql.gz",
+      "title": "mysql-for-ims-2.1-20160419.sql.gz"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
+      },
+      "name": "ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
+      "title": "ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
+      },
+      "name": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "title": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
+      },
+      "name": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
+      "title": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
+      },
+      "name": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
+      "title": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
+      },
+      "name": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
+      "title": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
+    },
+    {
+      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
+      "@type": "RepositoryObject",
+      "hasFile": {
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
+      },
+      "name": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
+      "title": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
+    },
+    {
+      "@id": "https://ror.org/008xxew50",
+      "@type": "Organization",
+      "name": "VU Amsterdam"
+    },
+    {
+      "@id": "https://ror.org/019af4n30",
+      "@type": "Organization",
+      "name": "Innovative Medicines Initiative"
+    },
+    {
+      "@id": "https://ror.org/027m9bs27",
+      "@type": "Organization",
+      "name": "The University of Manchester"
+    },
+    {
+      "@id": "https://spdx.org/licenses/Apache-2.0",
+      "@type": "CreativeWork",
+      "identifier": "Apache-2.0",
+      "name": "Apache License 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0",
+      "@type": "CreativeWork",
+      "identifier": "CC-BY-NC-SA-3.0",
+      "name": "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
+      "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC-BY-ND-3.0",
+      "@type": "CreativeWork",
+      "identifier": "CC-BY-ND-3.0",
+      "name": "Creative Commons Attribution No Derivatives 3.0 Unported",
+      "url": "https://creativecommons.org/licenses/by-nd/3.0/"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC-BY-SA-3.0",
+      "@type": "CreativeWork",
+      "identifier": "CC-BY-SA-3.0",
+      "name": "  Creative Commons Attribution Share Alike 3.0 Unported",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC-BY-SA-4.0",
+      "@type": "CreativeWork",
+      "identifier": "CC-BY-SA-4.0",
+      "name": "Creative Commons Attribution Share Alike 4.0 International"
+    },
+    {
+      "@id": "https://spdx.org/licenses/CC0-1.0",
+      "@type": "CreativeWork",
+      "identifier": "CC0-1.0",
+      "name": "Creative Commons Zero v1.0 Universal",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "@id": "https://w3id.org/bundle/",
+      "@type": "CreativeWork",
+      "identifier": "https://doi.org/10.5281/zenodo.12586",
+      "name": "Research Object Bundle 1.0"
+    },
+    {
+      "@id": "https://www.genenames.org/about/",
+      "@type": "CreativeWork",
+      "description": "Data release policy\nNo restrictions are imposed on access to, or use of, the data provided by the HGNC, which are provided to enhance knowledge and encourage progress in the scientific community. The HGNC provide these data in good faith, but make no warranty, express or implied, nor assume any legal liability or responsibility for any purpose for which they are used.\n\nGuidelines on use of data in publications (copyright and licensing)\nIt is a condition of our funding from NIH and the Wellcome Trust that the nomenclature and information we provide is freely available to all. Anyone may use the HGNC data, but we request that they reference the \"HUGO Gene Nomenclature Committee at the European Bioinformatics Institute\" and the website where possible.",
+      "name": "About the HGNC",
+      "url": "https://www.genenames.org/about/"
+    },
+    {
+      "@id": "https://www.openphactsfoundation.org/",
+      "@type": "Organization",
+      "name": "Open PHACTS Foundation"
+    },
+    {
+      "@id": "https://zenodo.org/",
+      "@type": "Organization",
+      "name": "Zenodo"
+    },
+    {
+      "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip",
+      "@type": "DataDownload",
+      "contentSize": 413624342,
+      "path": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip",
+      "datePublished": "2021-04-19T23:00:00.000Z",
+      "description": "BagIt ZIP archive of the Research Object ops-linksets-2.1.1",
+      "encodingFormat": "application/zip",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
-      "name": "OpenPHACTS Linksets 2.1.1",
+      "name": "ops-linksets-2.1.1.ro-crate.zip",
       "publisher": {
-        "@id": "https://ror.org/027m9bs27"
+        "@id": "https://zenodo.org/"
       },
-      "url": "https://github.com/openphacts/ops-linksets"
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
-      "@id": "#b056546b-46f1-4204-8e42-8625f07c1294",
-      "@type": "ContactPoint",
-      "email": "soiland-reyes@manchester.ac.uk",
-      "name": "Email Stian Soiland-Reyes"
+      "@id": "https://zenodo.org/record/4707733/files/ops-surechembl-linksets-0.1.0.data.zip",
+      "@type": "DataDownload",
+      "contentSize": 158900,
+      "path": "https://zenodo.org/record/4707733/files/ops-surechembl-linksets-0.1.0.data.zip",
+      "encodingFormat": [
+        "application/vnd.wf4ever.robundle+zip",
+        {
+          "@id": "https://w3id.org/bundle/"
+        }
+      ],
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
+      },
+      "name": "ops-surechembl-linksets-0.1.0.data.zip",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://zenodo.org/record/4707733/files/surechembl_hgnc.ttl.gz",
+      "@type": "File",
+      "contentSize": 118297,
+      "dateModified": "2016-04-18T16:59:36+0100",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
+      },
+      "name": "surechembl_hgnc.ttl.gz",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://zenodo.org/record/4707733/files/surechembl_mesh.ttl.gz",
+      "@type": "File",
+      "contentSize": 42681,
+      "dateModified": "2016-04-18T16:59:36+0100",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
+      },
+      "name": "surechembl_mesh.ttl.gz",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "https://zenodo.org/record/4707733/files/void.ttl",
+      "@type": "File",
+      "contentSize": 10134,
+      "dateModified": "2016-04-18T16:59:36+0100",
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
+      },
+      "name": "void.ttl",
+      "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "linksets/",
@@ -896,365 +1255,6 @@
       "license": {
         "@id": "https://spdx.org/licenses/CC0-1.0"
       }
-    },
-    {
-      "@id": "https://orcid.org/0000-0001-9842-9718",
-      "@type": "Person",
-      "affiliation": {
-        "@id": "https://ror.org/027m9bs27"
-      },
-      "email": "soiland-reyes@manchester.ac.uk",
-      "familyName": "Soiland-Reyes",
-      "givenName": "Stian",
-      "name": "Stian Soiland-Reyes"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz",
-      "@type": "File",
-      "encodingFormat": "",
-      "name": "mysql-for-ims-2.1-20160419.sql.gz"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
-      "@type": "DataDownload",
-      "contentSize": 235847,
-      "encodingFormat": "application/java-archive",
-      "name": "ops-chembl-linksets-20.1.1.jar",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "@type": "DataDownload",
-      "contentSize": 6256190,
-      "encodingFormat": "application/java-archive",
-      "name": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "@type": "DataDownload",
-      "contentSize": 3375446,
-      "encodingFormat": "application/java-archive",
-      "name": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
-      "@type": "DataDownload",
-      "contentSize": 462652,
-      "encodingFormat": [
-        "application/vnd.wf4ever.robundle+zip",
-        {
-          "@id": "https://w3id.org/bundle/"
-        }
-      ],
-      "name": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
-      "@type": "DataDownload",
-      "contentSize": 44705311,
-      "encodingFormat": [
-        "application/vnd.wf4ever.robundle+zip",
-        {
-          "@id": "https://w3id.org/bundle/"
-        }
-      ],
-      "name": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
-      "@type": "DataDownload",
-      "contentSize": 184062705,
-      "encodingFormat": [
-        "application/vnd.wf4ever.robundle+zip",
-        {
-          "@id": "https://w3id.org/bundle/"
-        }
-      ],
-      "name": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops",
-      "@type": "RepositoryCollection",
-      "hasMember": [
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
-        }
-      ],
-      "name": "ops Maven repository",
-      "title": "ops Maven repository"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data",
-      "@type": "RepositoryCollection",
-      "hasMember": [
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/ims-linksets-2.1.tar.gz"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz"
-        },
-        {
-          "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/linksets"
-        }
-      ],
-      "description": "The Open PHACTS data repository was previously hosted on data.openphacts.org, now partially mirrored at https://repository.mygrid.org.uk/",
-      "name": "data.openphacts.org repository",
-      "publisher": [
-        {
-          "@id": "https://ror.org/027m9bs27"
-        },
-        {
-          "@id": "https://ror.org/008xxew50"
-        },
-        {
-          "@id": "https://www.openphactsfoundation.org/"
-        }
-      ],
-      "title": "data.openphacts.org repository"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/ims-linksets-2.1.tar.gz",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/ims-linksets-2.1.tar.gz"
-      },
-      "name": "ims-linksets-2.1.tar.gz",
-      "title": "ims-linksets-2.1.tar.gz"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/linksets",
-      "@type": "RepositoryObject",
-      "name": "2.1/ims/linksets",
-      "title": "2.1/ims/linksets"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/mysql-for-ims-2.1-20160419.sql.gz"
-      },
-      "name": "mysql-for-ims-2.1-20160419.sql.gz",
-      "title": "mysql-for-ims-2.1-20160419.sql.gz"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
-      },
-      "name": "ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar",
-      "title": "ops-chembl-linksets/20.1.1/ops-chembl-linksets-20.1.1.jar"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-homosapiens-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
-      },
-      "name": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "title": "ops-ensembl-homosapiens-linksets-77.2015-08-20-20150911.112934-3.jar"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-ensembl-musmusculus-linksets/77.2015-08-20-SNAPSHOT/ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
-      },
-      "name": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar",
-      "title": "ops-ensembl-musmusculus-linksets-77.2015-08-20-20150911.112934-3.jar"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-hmdb-linksets/3.6.0-SNAPSHOT/ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
-      },
-      "name": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip",
-      "title": "ops-hmdb-linksets-3.6.0-20151118.114353-4.data.zip"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-linksets/0.20151104.0-SNAPSHOT/ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
-      },
-      "name": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip",
-      "title": "ops-rsc-linksets-0.20151104.0-20151214.143837-1.data.zip"
-    },
-    {
-      "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
-      "@type": "RepositoryObject",
-      "hasFile": {
-        "@id": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
-      },
-      "name": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
-      "title": "ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip"
-    },
-    {
-      "@id": "https://ror.org/008xxew50",
-      "@type": "Organization",
-      "name": "VU Amsterdam"
-    },
-    {
-      "@id": "https://ror.org/019af4n30",
-      "@type": "Organization",
-      "name": "Innovative Medicines Initiative"
-    },
-    {
-      "@id": "https://ror.org/027m9bs27",
-      "@type": "Organization",
-      "name": "The University of Manchester"
-    },
-    {
-      "@id": "https://spdx.org/licenses/Apache-2.0",
-      "@type": "CreativeWork",
-      "identifier": "Apache-2.0",
-      "name": "Apache License 2.0",
-      "url": "https://www.apache.org/licenses/LICENSE-2.0"
-    },
-    {
-      "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0",
-      "@type": "CreativeWork",
-      "identifier": "CC-BY-NC-SA-3.0",
-      "name": "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
-      "url": "https://creativecommons.org/licenses/by-nc-sa/3.0/"
-    },
-    {
-      "@id": "https://spdx.org/licenses/CC-BY-ND-3.0",
-      "@type": "CreativeWork",
-      "identifier": "CC-BY-ND-3.0",
-      "name": "Creative Commons Attribution No Derivatives 3.0 Unported",
-      "url": "https://creativecommons.org/licenses/by-nd/3.0/"
-    },
-    {
-      "@id": "https://spdx.org/licenses/CC-BY-SA-3.0",
-      "@type": "CreativeWork",
-      "identifier": "CC-BY-SA-3.0",
-      "name": "  Creative Commons Attribution Share Alike 3.0 Unported",
-      "url": "https://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    {
-      "@id": "https://spdx.org/licenses/CC-BY-SA-4.0",
-      "@type": "CreativeWork",
-      "identifier": "CC-BY-SA-4.0",
-      "name": "Creative Commons Attribution Share Alike 4.0 International"
-    },
-    {
-      "@id": "https://spdx.org/licenses/CC0-1.0",
-      "@type": "CreativeWork",
-      "identifier": "CC0-1.0",
-      "name": "Creative Commons Zero v1.0 Universal",
-      "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-    },
-    {
-      "@id": "https://w3id.org/bundle/",
-      "@type": "CreativeWork",
-      "identifier": "https://doi.org/10.5281/zenodo.12586",
-      "name": "Research Object Bundle 1.0"
-    },
-    {
-      "@id": "https://www.genenames.org/about/",
-      "@type": "CreativeWork",
-      "description": "Data release policy\nNo restrictions are imposed on access to, or use of, the data provided by the HGNC, which are provided to enhance knowledge and encourage progress in the scientific community. The HGNC provide these data in good faith, but make no warranty, express or implied, nor assume any legal liability or responsibility for any purpose for which they are used.\n\nGuidelines on use of data in publications (copyright and licensing)\nIt is a condition of our funding from NIH and the Wellcome Trust that the nomenclature and information we provide is freely available to all. Anyone may use the HGNC data, but we request that they reference the \"HUGO Gene Nomenclature Committee at the European Bioinformatics Institute\" and the website where possible.",
-      "name": "About the HGNC",
-      "url": "https://www.genenames.org/about/"
-    },
-    {
-      "@id": "https://www.openphactsfoundation.org/",
-      "@type": "Organization",
-      "name": "Open PHACTS Foundation"
-    },
-    {
-      "@id": "https://zenodo.org/",
-      "@type": "Organization",
-      "name": "Zenodo"
-    },
-    {
-      "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip",
-      "@type": "DataDownload",
-      "contentSize": 413624342,
-      "path": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip",
-      "datePublished": "2021-04-19T23:00:00.000Z",
-      "description": "BagIt ZIP archive of the Research Object ops-linksets-2.1.1",
-      "encodingFormat": "application/zip",
-      "license": {
-        "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
-      },
-      "name": "ops-linksets-2.1.1.ro-crate.zip",
-      "publisher": {
-        "@id": "https://zenodo.org/"
-      },
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://zenodo.org/record/4707733/files/ops-surechembl-linksets-0.1.0.data.zip",
-      "@type": "DataDownload",
-      "contentSize": 158900,
-      "path": "https://zenodo.org/record/4707733/files/ops-surechembl-linksets-0.1.0.data.zip",
-      "encodingFormat": [
-        "application/vnd.wf4ever.robundle+zip",
-        {
-          "@id": "https://w3id.org/bundle/"
-        }
-      ],
-      "license": {
-        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
-      },
-      "name": "ops-surechembl-linksets-0.1.0.data.zip",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://zenodo.org/record/4707733/files/surechembl_hgnc.ttl.gz",
-      "@type": "File",
-      "contentSize": 118297,
-      "dateModified": "2016-04-18T16:59:36+0100",
-      "license": {
-        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
-      },
-      "name": "surechembl_hgnc.ttl.gz",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://zenodo.org/record/4707733/files/surechembl_mesh.ttl.gz",
-      "@type": "File",
-      "contentSize": 42681,
-      "dateModified": "2016-04-18T16:59:36+0100",
-      "license": {
-        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
-      },
-      "name": "surechembl_mesh.ttl.gz",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
-    },
-    {
-      "@id": "https://zenodo.org/record/4707733/files/void.ttl",
-      "@type": "File",
-      "contentSize": 10134,
-      "dateModified": "2016-04-18T16:59:36+0100",
-      "license": {
-        "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
-      },
-      "name": "void.ttl",
-      "sdDatePublished": "2021-04-25T10:45:00+0100"
     }
   ]
 }
