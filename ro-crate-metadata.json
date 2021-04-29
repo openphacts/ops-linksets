@@ -5,7 +5,8 @@
       "@id": "#b056546b-46f1-4204-8e42-8625f07c1294",
       "@type": "ContactPoint",
       "email": "soiland-reyes@manchester.ac.uk",
-      "name": "Email Stian Soiland-Reyes"
+      "name": "Email Stian Soiland-Reyes",
+      "contactType": "email"
     },
     {
       "@id": "./",
@@ -21,9 +22,14 @@
           "@id": "http://ceur-ws.org/Vol-951/paper5.pdf"
         }
       ],
-      "contactPoint": {
-        "@id": "#b056546b-46f1-4204-8e42-8625f07c1294"
-      },
+      "contactPoint": [
+        {
+          "@id": "#b056546b-46f1-4204-8e42-8625f07c1294"
+        },
+        { 
+          "@id": "https://github.com/openphacts/ops-linksets/issues"
+        }
+      ],
       "datePublished": "2021-04-25T10:00:00.000Z",
       "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\nRepublished, previously published on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load.xml which has relative URIs within this RO-Crate.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 and therefore linked by reference through separate Zenodo deposit.",
       "distribution": {
@@ -57,7 +63,7 @@
       "publisher": {
         "@id": "https://ror.org/027m9bs27"
       },
-      "url": "https://github.com/openphacts/ops-linksets"
+      "url": "https://openphacts.github.io/ops-linksets/"
     },
     {
       "@id": "http://ceur-ws.org/Vol-951/",
@@ -136,6 +142,12 @@
       },
       "name": "ops-surechembl-linksets",
       "url": "https://github.com/openphacts/ops-surechembl-linksets"
+    },
+    {
+      "@id": "https://github.com/openphacts/ops-linksets/issues",
+      "@type": "ContactPoint",
+      "name": "Raise GitHub issue in openphacts/ops-linksets",
+      "contactType": "issue"
     },
     {
       "@id": "https://hmdb.ca/citing",
@@ -540,6 +552,7 @@
           "@id": "linksets/load.xml"
         }
       ],
+      "identifier": "http://data.openphacts.org/2.1/ims/linksets/",
       "name": "linksets",
       "publisher": {
         "@id": "https://ror.org/027m9bs27"
@@ -2031,6 +2044,7 @@
         "@id": "https://orcid.org/0000-0001-9842-9718"
       },
       "dateModified": "2016-04-19T10:14:43.000Z",
+      "identifier": "http://data.openphacts.org/2.1/ims/linksets/load.xml",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
