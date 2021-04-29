@@ -1,5 +1,10 @@
 {
-  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context", 
+    { "DatasetDescription": "http://rdfs.org/ns/void#DatasetDescription",
+      "Linkset": "http://rdfs.org/ns/void#Linkset"
+    }
+  ],
   "@graph": [
     {
       "@id": "#b056546b-46f1-4204-8e42-8625f07c1294",
@@ -151,6 +156,7 @@
       "@type": "CreativeWork",
       "description": "HMDB is offered to the public as a freely available resource. Use and re-distribution of the data, in whole or in part, for commercial purposes requires explicit permission of the authors and explicit acknowledgment of the source material (HMDB) and the original publication (see below). We ask that users who download significant portions of the database cite the HMDB paper in any resulting publications. For commercial licences, please consult with jreid3@ualberta.ca (Jennifer).\n\nPlease cite:\n\n    Wishart DS, Tzur D, Knox C, et al., HMDB: the Human Metabolome Database. Nucleic Acids Res. 2007 Jan;35(Database issue):D521-6. 17202168\n    Wishart DS, Knox C, Guo AC, et al., HMDB: a knowledgebase for the human metabolome. Nucleic Acids Res. 2009 37(Database issue):D603-610. 18953024\n    Wishart DS, Jewison T, Guo AC, Wilson M, Knox C, et al., HMDB 3.0 — The Human Metabolome Database in 2013. Nucleic Acids Res. 2013. Jan 1;41(D1):D801-7. 23161693\n    Wishart DS, Feunang YD, Marcu A, Guo AC, Liang K, et al., HMDB 4.0 — The Human Metabolome Database for 2018. Nucleic Acids Res. 2018. Jan 4;46(D1):D608-17. 29140435",
       "name": "Citing the HMDB",
+      "citation": {"@id": "https://doi.org/10.1093/nar/gks1065"},      
       "url": "https://hmdb.ca/citing"
     },
     {
@@ -481,18 +487,28 @@
     },
     {
       "@id": "https://zenodo.org/record/4707733/files/surechembl_hgnc.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
       "contentSize": 118297,
       "dateModified": "2016-04-18T16:59:36+0100",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
       },
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "surechembl_hgnc.ttl.gz",
       "sdDatePublished": "2021-04-25T10:45:00+0100"
     },
     {
       "@id": "https://zenodo.org/record/4707733/files/surechembl_mesh.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "contentSize": 42681,
       "dateModified": "2016-04-18T16:59:36+0100",
       "license": {
@@ -503,14 +519,48 @@
     },
     {
       "@id": "https://zenodo.org/record/4707733/files/void.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
+      "about": [
+        {
+          "@id": "https://zenodo.org/record/4707733/files/surechembl_hgnc.ttl.gz"
+        },
+        {
+          "@id": "https://zenodo.org/record/4707733/files/surechembl_mesh.ttl.gz"
+        }
+      ],
       "contentSize": 10134,
       "dateModified": "2016-04-18T16:59:36+0100",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-NC-SA-3.0"
       },
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ], 
       "name": "void.ttl",
       "sdDatePublished": "2021-04-25T10:45:00+0100"
+    },
+    {
+      "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912",
+      "@type": "WebSite",
+      "name": "Dataset Descriptions for the Open Pharmacological Space",
+      "description": "This is a specification for the metadata to described datasets, and the linksets that relate them, to enable their use within the Open PHACTS discovery platform. The specification defines the metadata properties that are expected to describe datasets and linksets; detailing the creation and publication of the dataset. Details of deploying dataset descriptions and an exchange format for linkset files are also given.",
+      "datePublished": "2013-09-12T10:00:00Z"
+    },
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874",
+      "@type": "WebSite",
+      "name": "Turtle",
+      "description": "Turtle (Terse RDF Triple Language) is a format for expressing data in the Resource Description Framework (RDF) data model.",
+      "url": "https://www.w3.org/TR/turtle/"
+    },    
+    {
+      "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266",
+      "@type": "WebSite",
+      "name": "GZIP Format",
+      "description": "Compressed single file or file archive",
+      "url": "https://www.gnu.org/software/gzip/"
     },
     {
       "@id": "linksets/",
@@ -568,11 +618,17 @@
       "hasPart": {
         "@id": "linksets/aers/aers_drugbank_linkset.ttl.gz"
       },
+
       "name": "aers"
     },
     {
       "@id": "linksets/aers/aers_drugbank_linkset.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:15.000Z",
       "name": "aers_drugbank_linkset.ttl.gz"
     },
@@ -676,178 +732,325 @@
     },
     {
       "@id": "linksets/conceptwiki/CW-Void_v13.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
+      "about": "linkset/conceptwiki/",
       "dateModified": "2016-04-19T10:10:17.000Z",
-      "name": "CW-Void_v13.ttl"
+      "name": "CW-Void_v13.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/conceptwiki/chemspider.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "chemspider.ttl.gz",
       "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/linksets/conceptwiki/chemspider.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/drugbank_ca_drugs-protein.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "drugbank_ca_drugs-protein.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/enzyme_expasy_org.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "enzyme_expasy_org.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/hack.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "hack.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_MSH-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "purl_bioontology_org_ontology_MSH-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_MSH-gene.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "purl_bioontology_org_ontology_MSH-gene.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_MSH-protein.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "purl_bioontology_org_ontology_MSH-protein.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_MSH.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:18.000Z",
       "name": "purl_bioontology_org_ontology_MSH.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_NCIM-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "purl_bioontology_org_ontology_NCIM-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_NCIM-gene.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "purl_bioontology_org_ontology_NCIM-gene.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_NCIM-protein.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "purl_bioontology_org_ontology_NCIM-protein.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_bioontology_org_ontology_NCIM.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "purl_bioontology_org_ontology_NCIM.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_obolibrary_org_obo-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "purl_obolibrary_org_obo-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/purl_org_obo_owl_GO.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "purl_org_obo_owl_GO.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:18.000Z",
       "name": "rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz",
       "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/conceptwiki/rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/void_2013-12-12.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
+      "about": {"@id": "linksets/conceptwiki/"},
       "dateModified": "2016-04-19T10:10:18.000Z",
-      "name": "void_2013-12-12.ttl"
+      "name": "void_2013-12-12.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/conceptwiki/wikipathways.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "wikipathways.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www4_wiwiss_fu_berlin_de_drugbank_resource_drugs-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:18.000Z",
       "name": "www4_wiwiss_fu_berlin_de_drugbank_resource_drugs-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www4_wiwiss_fu_berlin_de_drugbank_resource_targets-protein.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "www4_wiwiss_fu_berlin_de_drugbank_resource_targets-protein.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_drugbank_ca_drugs-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "www_drugbank_ca_drugs-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_ebi_ac_uk_chembldb_index_php_compound_inspect-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "www_ebi_ac_uk_chembldb_index_php_compound_inspect-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_hmdb_ca_metabolites-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "www_hmdb_ca_metabolites-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_pdb_org_pdb_explore-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "www_pdb_org_pdb_explore-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_pdb_org_pdb_explore-protein.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "www_pdb_org_pdb_explore-protein.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_pdb_org_pdb_ligand-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "www_pdb_org_pdb_ligand-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_uniprot_org_uniprot-compound.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "www_uniprot_org_uniprot-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_uniprot_org_uniprot-gene.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:17.000Z",
       "name": "www_uniprot_org_uniprot-gene.ttl.gz",
       "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/conceptwiki/www_uniprot_org_uniprot-gene.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_uniprot_org_uniprot-protein.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "dateModified": "2016-04-19T10:10:16.000Z",
       "name": "www_uniprot_org_uniprot-protein.ttl.gz",
       "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/conceptwiki/www_uniprot_org_uniprot-protein.ttl.gz"
@@ -914,33 +1117,64 @@
     },
     {
       "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_complextarget_targetcmpt_ls.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "chembl_20.1_complextarget_targetcmpt_ls.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_grouptarget_targetcmpt_ls.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "chembl_20.1_grouptarget_targetcmpt_ls.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_molecule_chebi_ls.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "chembl_20.1_molecule_chebi_ls.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_singletarget_targetcmpt_ls.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "chembl_20.1_singletarget_targetcmpt_ls.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-chembl-linksets/chembl_20.1_targetcmpt_uniprot_ls.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "chembl_20.1_targetcmpt_uniprot_ls.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-chembl-linksets/void.ttl",
-      "@type": "File",
-      "name": "void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": {"@id": "linksets/data/ops-chembl-linksets/"},
+      "name": "void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/",
@@ -1016,102 +1250,203 @@
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ccds.inferred_from_transcript.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_ccds.inferred_from_transcript.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_dataset.void.ttl",
-      "@type": "File",
-      "name": "Ensembl_Hs_dataset.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-ensembl-homosapiens-linksets/" },
+      "name": "Ensembl_Hs_dataset.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ena.embl.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_ena.embl.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_hgnc.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_hgnc.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_hgnc.direct.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_hgnc.direct.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_insdc.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_insdc.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_mirbase.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_mirbase.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_mirbase.misc.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_mirbase.misc.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ncbigene.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_ncbigene.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_ncbigene.direct.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_ncbigene.direct.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_pdb.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_pdb.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_refseq.inferred_from_transcript.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_refseq.inferred_from_transcript.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_refseq.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_refseq.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_unigene.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.direct.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_unigene.direct.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.misc.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_unigene.misc.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_unigene.sequence_match.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_unigene.sequence_match.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_uniprot.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_uniprot.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_wikigenes.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_wikigenes.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-homosapiens-linksets/Ensembl_Hs_wikigenes.direct.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Hs_wikigenes.direct.LS.ttl.gz"
     },
     {
@@ -1176,82 +1511,163 @@
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ccds.inferred_from_transcript.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_ccds.inferred_from_transcript.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_dataset.void.ttl",
-      "@type": "File",
-      "name": "Ensembl_Mm_dataset.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-ensembl-musmusculus-linksets/" },
+      "name": "Ensembl_Mm_dataset.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ena.embl.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_ena.embl.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_insdc.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_insdc.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_mirbase.direct.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_mirbase.direct.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_mirbase.misc.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_mirbase.misc.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_ncbigene.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_ncbigene.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_pdb.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_pdb.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_refseq.inferred_from_transcript.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_refseq.inferred_from_transcript.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_refseq.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_refseq.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_unigene.dependent.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.direct.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_unigene.direct.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.misc.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_unigene.misc.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_unigene.sequence_match.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_unigene.sequence_match.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_uniprot.inferred_from_translation.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_uniprot.inferred_from_translation.LS.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-ensembl-musmusculus-linksets/Ensembl_Mm_wikigenes.dependent.LS.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "Ensembl_Mm_wikigenes.dependent.LS.ttl.gz"
     },
     {
@@ -1274,13 +1690,24 @@
     },
     {
       "@id": "linksets/data/ops-hgnc-linkset/hgnc-to-hgnc.symbol-linkset.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "hgnc-to-hgnc.symbol-linkset.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-hgnc-linkset/void.ttl",
-      "@type": "File",
-      "name": "void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-hgnc-linkset/" },      
+      "name": "void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/",
@@ -1327,44 +1754,83 @@
       "license": {
         "@id": "https://hmdb.ca/citing"
       },
+      "citation": {"@id": "https://doi.org/10.1093/nar/gks1065"},
       "name": "ops-hmdb-linksets",
       "url": "https://github.com/openphacts/ops-hmdb-linksets"
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls.void.ttl",
-      "@type": "File",
-      "name": "hmdb_ls.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-hmdb-linksets/" }, 
+      "name": "hmdb_ls.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "hmdb_ls_cas.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.void.ttl",
-      "@type": "File",
-      "name": "hmdb_ls_cas.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": {"@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_cas.ttl.gz"},
+      "name": "hmdb_ls_cas.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "hmdb_ls_chemspider.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.void.ttl",
-      "@type": "File",
-      "name": "hmdb_ls_chemspider.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_chemspider.ttl.gz" },
+      "name": "hmdb_ls_chemspider.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "hmdb_ls_kegg.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.void.ttl",
-      "@type": "File",
-      "name": "hmdb_ls_kegg.void.ttl"
-    },
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_kegg.ttl.gz" }, 
+      "name": "hmdb_ls_kegg.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]    },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.ttl.gz",
       "@type": "File",
@@ -1372,18 +1838,35 @@
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.void.ttl",
-      "@type": "File",
-      "name": "hmdb_ls_pubchem.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_pubchem.ttl.gz" },      
+      "name": "hmdb_ls_pubchem.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.ttl.gz",
-      "@type": "File",
+      "@type": ["File", "Linkset"],
+      "encodingFormat": [
+        "application/gzip", "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" },
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/x-fmt/266" }
+      ],      
       "name": "hmdb_ls_wp.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.void.ttl",
-      "@type": "File",
-      "name": "hmdb_ls_wp.void.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "about": { "@id": "linksets/data/ops-hmdb-linksets/hmdb_ls_wp.void.ttl" },     
+      "name": "hmdb_ls_wp.void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/data/ops-rsc-linksets/",
@@ -1859,8 +2342,13 @@
     },
     {
       "@id": "linksets/data/ops-rsc-linksets/void_2015-11-04.ttl",
-      "@type": "File",
-      "name": "void_2015-11-04.ttl"
+      "@type": ["File", "DatasetDescription"],
+      "name": "void_2015-11-04.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/data/ops-rsc-surechembl-linksets/",
@@ -1948,9 +2436,14 @@
     },
     {
       "@id": "linksets/data/ops-rsc-surechembl-linksets/void_2016-02-24.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
       "dateModified": "2016-04-19T10:10:15.000Z",
-      "name": "void_2016-02-24.ttl"
+      "name": "void_2016-02-24.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/disgenet/",
@@ -2015,9 +2508,14 @@
     },
     {
       "@id": "linksets/drugbank/db-uniprot-ls-void.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
       "dateModified": "2016-04-19T10:10:15.000Z",
-      "name": "db-uniprot-ls-void.ttl"
+      "name": "db-uniprot-ls-void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/drugbank/db-uniprot-ls.ttl.gz",
@@ -2030,9 +2528,14 @@
     },
     {
       "@id": "linksets/drugbank/db-uniprot-proteingroups-ls-void.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
       "dateModified": "2016-04-19T10:10:15.000Z",
-      "name": "db-uniprot-proteingroups-ls-void.ttl"
+      "name": "db-uniprot-proteingroups-ls-void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/drugbank/db-uniprot-proteingroups-ls.ttl.gz",
@@ -2082,9 +2585,14 @@
     },
     {
       "@id": "linksets/nextprot/nextprot_uniprot_ls_void.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
       "dateModified": "2016-04-19T10:10:14.000Z",
-      "name": "nextprot_uniprot_ls_void.ttl"
+      "name": "nextprot_uniprot_ls_void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/uniprot/",
@@ -2221,9 +2729,14 @@
     },
     {
       "@id": "linksets/wikipathways/wikipathways_void.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
       "dateModified": "2016-04-19T10:10:16.000Z",
-      "name": "wikipathways_void.ttl"
+      "name": "wikipathways_void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/wikipathways/wp-po_Linkset.ttl.gz",
@@ -2233,9 +2746,14 @@
     },
     {
       "@id": "linksets/wikipathways/wp-po_Void.ttl",
-      "@type": "File",
+      "@type": ["File", "DatasetDescription"],
       "dateModified": "2016-04-19T10:10:16.000Z",
-      "name": "wp-po_Void.ttl"
+      "name": "wp-po_Void.ttl",
+      "conformsTo": { "@id": "http://www.openphacts.org/specs/2013/WD-datadesc-20130912/" },
+      "encodingFormat": [
+        "text/turtle",
+        { "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/874" }
+      ]      
     },
     {
       "@id": "linksets/load-github.xml",
@@ -2282,6 +2800,21 @@
       "license": {
         "@id": "https://spdx.org/licenses/CC0-1.0"
       }
-    }
+    },
+    {
+      "@id": "http://rdfs.org/ns/void#DatasetDescription",
+      "@type": "Thing",
+      "name": "DatasetDescription",
+      "description": "Description of Linked Dataset with the VoID Vocabulary",
+      "url": "https://www.w3.org/TR/void/#void-file"
+    },
+    {
+      "@id": "http://rdfs.org/ns/void#Linkset",
+      "@type": "Thing",
+      "name": "Linkset",
+      "description": "A collection of RDF links between two void:Datasets.",
+      "url": "https://www.w3.org/TR/void/#linkset"
+    }    
+    
   ]
 }
