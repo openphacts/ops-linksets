@@ -78,7 +78,8 @@
       "name": "Scientific Lenses over Linked Data: An approach to support task specific views of the data. A vision."
     },
     {
-      "@id": "http://data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz",
+      "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/ims-linksets-2.1.tar.gz",
+      "identifier": "http://data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz",
       "@type": "DataDownload",
       "contentSize": 418941181,
       "path": "https://repository.mygrid.org.uk/artifactory/data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz",
@@ -508,7 +509,7 @@
       "dateModified": "2021-04-20T14:55:31.387Z",
       "description": "Open PHACTS 2.1 Linksets, unpacked from https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/ims-linksets-2.1.tar.gz",
       "distribution": {
-        "@id": "http://data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz"
+        "@id": "https://repository.mygrid.org.uk/artifactory/ops-data/2.1/ims/ims-linksets-2.1.tar.gz"
       },
       "hasPart": [
         {
@@ -1534,12 +1535,14 @@
     {
       "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_CHEMBL20151104.ttl.gz",
       "@type": "File",
-      "name": "LINKSET_EXACT_CHEMBL20151104.ttl.gz"
+      "name": "LINKSET_EXACT_CHEMBL20151104.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_CHEMBL20151104.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz",
       "@type": "File",
-      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz"
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_CHEMBL20151104.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-rsc-linksets/CHEMBL/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_CHEMBL20151104.ttl.gz",
@@ -1911,13 +1914,15 @@
       "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz",
       "@type": "File",
       "dateModified": "2016-04-19T10:10:15.000Z",
-      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz"
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz",
       "@type": "File",
       "dateModified": "2016-04-19T10:10:15.000Z",
-      "name": "LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz"
+      "name": "LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/linksets/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz"
     },
     {
       "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_SURE_CHEMBL20160224.ttl.gz",
