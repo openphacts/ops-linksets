@@ -45,7 +45,7 @@
         }
       ],
       "datePublished": "2021-04-25T10:00:00.000Z",
-      "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\nRepublished, previously published on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load.xml which has relative URIs within this RO-Crate.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 and therefore linked by reference through separate Zenodo deposit.",
+      "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\n2.1.1 is republished, previously on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load-relative.xml which has relative URIs within this RO-Crate, but this has not been tested.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 (not for commercial use), and therefore linked by reference through separate Zenodo DOI.",
       "distribution": {
         "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip"
       },
@@ -58,9 +58,6 @@
         },
         {
           "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data"
-        },
-        {
-          "@id": "load.xml"
         },
         {
           "@id": "linksets/"
@@ -259,7 +256,10 @@
             "@id": "linksets/load.xml"
           },
           {
-            "@id": "load.xml"
+            "@id": "linksets/load-github.xml"
+          },
+          {
+            "@id": "linksets/load-relative.xml"
           }
         ]
       }
@@ -763,7 +763,10 @@
             "@id": "linksets/load.xml"
           },
           {
-            "@id": "load.xml"
+            "@id": "linksets/load-github.xml"
+          },
+          {
+            "@id": "linksets/load-relative.xml"
           }
         ]
       }
@@ -979,6 +982,12 @@
         },
         {
           "@id": "linksets/load.xml"
+        },
+        {
+          "@id": "linksets/load-github.xml"
+        },
+        {
+          "@id": "linksets/load-relative.xml"
         }
       ],
       "identifier": "http://data.openphacts.org/2.1/ims/linksets/",
@@ -3657,6 +3666,7 @@
       },
       "dateModified": "2016-04-19T10:14:43.000Z",
       "identifier": "http://data.openphacts.org/2.1/ims/linksets/load.xml",
+      "description": "Load file for Identity Mapping Service. Note that this file will no longer work because http://data.openphacts.org/ have been decommissioned.",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
@@ -3669,7 +3679,10 @@
         ],
         "isBasedOn": [
           {
-            "@id": "load.xml"
+            "@id": "linksets/load-github.xml"
+          },
+          {
+            "@id": "linksets/load-relative.xml"
           }
         ]
       }
@@ -3998,7 +4011,30 @@
       }
     },
     {
-      "@id": "load.xml",
+      "@id": "linksets/load-github.xml",
+      "@type": "File",
+      "creator": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "dateModified": "2021-04-20T09:54:42.318Z",
+      "description": "Modified version of the original linksets/load.xml but referring to GitHub raw URIs within this RO-Crate.",
+      "isBasedOn": {
+        "@id": "linksets/load.xml"
+      },
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
+      },
+      "name": "load-github.xml",
+      "@reverse": {
+        "hasPart": [
+          {
+            "@id": "linksets/"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "linksets/load-relative.xml",
       "@type": "File",
       "creator": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -4011,11 +4047,11 @@
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
-      "name": "load.xml",
+      "name": "load-relative.xml",
       "@reverse": {
         "hasPart": [
           {
-            "@id": "./"
+            "@id": "linksets/"
           }
         ]
       }
@@ -4104,11 +4140,11 @@ table.table {
             <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
             <td style='text-align:left'><span>Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. 
 
-Republished, previously published on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. 
+2.1.1 is republished, previously on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. 
 
-The linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load.xml which has relative URIs within this RO-Crate.
+The linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load-relative.xml which has relative URIs within this RO-Crate, but this has not been tested.
 
-The content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 and therefore linked by reference through separate Zenodo deposit.</span></td>
+The content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 (not for commercial use), and therefore linked by reference through separate Zenodo DOI.</span></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">funder<span>&nbsp;</span><a href="http://schema.org/funder">[?]</a></th>
             <td style='text-align:left'><a href="#https%3A//ror.org/019af4n30">Innovative Medicines Initiative</a></td>
@@ -4141,8 +4177,6 @@ The content of this RO-Crate has mixed licenses, deemed comparable with its own 
                         <li><a href="#https%3A//repository.mygrid.org.uk/artifactory/webapp/%23/artifacts/browse/tree/General/ops">ops Maven repository</a></li>
                         
                         <li><a href="#https%3A//repository.mygrid.org.uk/artifactory/webapp/%23/artifacts/browse/tree/General/ops-data">data.openphacts.org repository</a></li>
-                        
-                        <li><a href="#load.xml">load.xml</a></li>
                         
                         <li><a href="#linksets/">linksets</a></li>
                         
@@ -4234,7 +4268,9 @@ The content of this RO-Crate has mixed licenses, deemed comparable with its own 
             <td style='text-align:left'><ul>
                         <li><a href="#linksets/load.xml">load.xml</a></li>
                         
-                        <li><a href="#load.xml">load.xml</a></li>
+                        <li><a href="#linksets/load-github.xml">load-github.xml</a></li>
+                        
+                        <li><a href="#linksets/load-relative.xml">load-relative.xml</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -4525,48 +4561,6 @@ From Proceedings of the Second International Workshop on Linked Science 2012 - T
         </div>
         <hr/><br/><br/>
            <div>
-            <h3><a href="load.xml">⬇️ Download: </a> load.xml</h3>
-            
-            
-            
-            
-        <div id="load.xml">
-            
-            <table class="table metadata table-striped" >
-                <tbody><tr>
-            <th style="text-align:left;" class="prop">@id</th>
-            <td style='text-align:left'><span>load.xml</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">name<span>&nbsp;</span><a href="http://schema.org/name">[?]</a></th>
-            <td style='text-align:left'><span>load.xml</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">@type</th>
-            <td style='text-align:left'><span>File</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">description<span>&nbsp;</span><a href="http://schema.org/description">[?]</a></th>
-            <td style='text-align:left'><span>Modified version of the original linksets/load.xml but referring to relative URIs within this RO-Crate as data.openphacts.org has been decommissioned.</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">creator<span>&nbsp;</span><a href="http://schema.org/creator">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//orcid.org/0000-0001-9842-9718">Stian Soiland-Reyes</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">dateModified<span>&nbsp;</span><a href="http://schema.org/dateModified">[?]</a></th>
-            <td style='text-align:left'><span>2021-04-20T09:54:42.318Z</span></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">isBasedOn<span>&nbsp;</span><a href="http://schema.org/isBasedOn">[?]</a></th>
-            <td style='text-align:left'><a href="#linksets/load.xml">load.xml</a></td>
-            </tr><tr>
-            <th style="text-align:left;" class="prop">license<span>&nbsp;</span><a href="http://schema.org/license">[?]</a></th>
-            <td style='text-align:left'><a href="#https%3A//spdx.org/licenses/CC-BY-SA-4.0">Creative Commons Attribution Share Alike 4.0 International</a></td>
-            </tr><tr><th colspan="2" style="text-align:center">Items that reference this one</th><tr><tr>
-            <th style="text-align:left;" class="prop">hasPart<span>&nbsp;</span><a href="http://schema.org/hasPart">[?]</a></th>
-            <td style='text-align:left'><a href="#./">OpenPHACTS Linksets 2.1.1</a></td>
-            </tr></tbody>
-            </table>
-        </div>
-
-        </div>
-        <hr/><br/><br/>
-           <div>
             <h3><a href="https://repository.mygrid.org.uk/artifactory/data.openphacts.org/2.1/ims/ims-linksets-2.1.tar.gz">⬇️📦 Download this dataset: ims-linksets-2.1.tar.gz</a><br/> linksets</h3>
             
             
@@ -4613,6 +4607,10 @@ From Proceedings of the Second International Workshop on Linked Science 2012 - T
                         <li><a href="#linksets/wikipathways/">wikipathways</a></li>
                         
                         <li><a href="#linksets/load.xml">load.xml</a></li>
+                        
+                        <li><a href="#linksets/load-github.xml">load-github.xml</a></li>
+                        
+                        <li><a href="#linksets/load-relative.xml">load-relative.xml</a></li>
                         </ul></td>
             </tr><tr>
             <th style="text-align:left;" class="prop">identifier<span>&nbsp;</span><a href="http://schema.org/identifier">[?]</a></th>
@@ -4712,7 +4710,9 @@ From Proceedings of the Second International Workshop on Linked Science 2012 - T
                         
                         <li><a href="#linksets/load.xml">load.xml</a></li>
                         
-                        <li><a href="#load.xml">load.xml</a></li>
+                        <li><a href="#linksets/load-github.xml">load-github.xml</a></li>
+                        
+                        <li><a href="#linksets/load-relative.xml">load-relative.xml</a></li>
                         </ul></td>
             </tr></tbody>
             </table>
@@ -4759,7 +4759,7 @@ From Proceedings of the Second International Workshop on Linked Science 2012 - T
 </div>
 
 
-<p>This file was created at 1619710702091 by
+<p>This file was created at 1619711317838 by
 <a href='https://code.research.uts.edu.au/eresearch/calcytejs'>
 Calcyte</a> which implements the <a href=''>
 Draft RO-Crate format</a>, version 

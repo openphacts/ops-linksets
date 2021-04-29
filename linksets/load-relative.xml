@@ -1,4 +1,10 @@
 <?xml version="1.0"?>
+<!--
+    This variant of load.xml uses relatove links.
+
+    Note that if you have checked out from GitHub you will need to
+    enable Git LFS to fetch the largest files (see .gitattributes)
+-->
 <loadSteps>
 
 <clearAll/>

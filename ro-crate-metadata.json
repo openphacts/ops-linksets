@@ -31,7 +31,7 @@
         }
       ],
       "datePublished": "2021-04-25T10:00:00.000Z",
-      "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\nRepublished, previously published on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load.xml which has relative URIs within this RO-Crate.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 and therefore linked by reference through separate Zenodo deposit.",
+      "description": "Research Object RO-Crate of aggregated linksets used by Open PHACTS 2.1 IMS. \n\n2.1.1 is republished, previously on http://data.openphacts.org/2.1/ims/linksets/ by VU, which as of 2021-04-20 is offline. \n\nThe linksets can in theory be loaded in an Identity Mapping Service (IMS) instance using the modified load-relative.xml which has relative URIs within this RO-Crate, but this has not been tested.\n\nThe content of this RO-Crate has mixed licenses, deemed comparable with its own license CC-BY-SA-4.0 or as part of a collection. See this RO-Crate metadata for each nested Dataset entity, which attempts to reflect their authorative VoID files. Note the CC-BY-ND 3.0 restriction of derivative works for linksets/drugbank, linksets/disgenet, linksets/nextprot. ops-surechembl-linksets is licensed CC-BY-NC-SA-3.0 (not for commercial use), and therefore linked by reference through separate Zenodo DOI.",
       "distribution": {
         "@id": "https://zenodo.org/record/4704867/files/ops-linksets-2.1.1.ro-crate.zip"
       },
@@ -44,9 +44,6 @@
         },
         {
           "@id": "https://repository.mygrid.org.uk/artifactory/webapp/#/artifacts/browse/tree/General/ops-data"
-        },
-        {
-          "@id": "load.xml"
         },
         {
           "@id": "linksets/"
@@ -550,6 +547,12 @@
         },
         {
           "@id": "linksets/load.xml"
+        },
+        {
+          "@id": "linksets/load-github.xml"
+        },
+        {
+          "@id": "linksets/load-relative.xml"
         }
       ],
       "identifier": "http://data.openphacts.org/2.1/ims/linksets/",
@@ -2045,6 +2048,7 @@
       },
       "dateModified": "2016-04-19T10:14:43.000Z",
       "identifier": "http://data.openphacts.org/2.1/ims/linksets/load.xml",
+      "description": "Load file for Identity Mapping Service. Note that this file will no longer work because http://data.openphacts.org/ have been decommissioned.",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
@@ -2234,7 +2238,23 @@
       "name": "wp-po_Void.ttl"
     },
     {
-      "@id": "load.xml",
+      "@id": "linksets/load-github.xml",
+      "@type": "File",
+      "creator": {
+        "@id": "https://orcid.org/0000-0001-9842-9718"
+      },
+      "dateModified": "2021-04-20T09:54:42.318Z",
+      "description": "Modified version of the original linksets/load.xml but referring to GitHub raw URIs within this RO-Crate.",
+      "isBasedOn": {
+        "@id": "linksets/load.xml"
+      },
+      "license": {
+        "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
+      },
+      "name": "load-github.xml"
+    },    
+    {
+      "@id": "linksets/load-relative.xml",
       "@type": "File",
       "creator": {
         "@id": "https://orcid.org/0000-0001-9842-9718"
@@ -2247,7 +2267,7 @@
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-4.0"
       },
-      "name": "load.xml"
+      "name": "load-relative.xml"
     },
     {
       "@id": "ro-crate-metadata.json",
