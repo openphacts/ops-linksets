@@ -304,7 +304,8 @@
       "@id": "linksets/conceptwiki/chemspider.ttl.gz",
       "@type": "File",
       "dateModified": "2016-04-19T10:10:17.000Z",
-      "name": "chemspider.ttl.gz"
+      "name": "chemspider.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/linksets/conceptwiki/chemspider.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/drugbank_ca_drugs-protein.ttl.gz",
@@ -388,7 +389,8 @@
       "@id": "linksets/conceptwiki/rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz",
       "@type": "File",
       "dateModified": "2016-04-19T10:10:18.000Z",
-      "name": "rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz"
+      "name": "rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/conceptwiki/rdf_ebi_ac_uk_resource_chembl_molecule-compound.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/void_2013-12-12.ttl",
@@ -460,13 +462,15 @@
       "@id": "linksets/conceptwiki/www_uniprot_org_uniprot-gene.ttl.gz",
       "@type": "File",
       "dateModified": "2016-04-19T10:10:17.000Z",
-      "name": "www_uniprot_org_uniprot-gene.ttl.gz"
+      "name": "www_uniprot_org_uniprot-gene.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/conceptwiki/www_uniprot_org_uniprot-gene.ttl.gz"
     },
     {
       "@id": "linksets/conceptwiki/www_uniprot_org_uniprot-protein.ttl.gz",
       "@type": "File",
       "dateModified": "2016-04-19T10:10:16.000Z",
-      "name": "www_uniprot_org_uniprot-protein.ttl.gz"
+      "name": "www_uniprot_org_uniprot-protein.ttl.gz",
+      "url": "https://github.com/openphacts/ops-linksets/raw/2.1.1/linksets/conceptwiki/www_uniprot_org_uniprot-protein.ttl.gz"
     },
     {
       "@id": "linksets/data/",
