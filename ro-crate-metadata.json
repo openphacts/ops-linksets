@@ -44,6 +44,9 @@
         },
         {
           "@id": "linksets/"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.4707733"
         }
       ],
       "identifier": "https://doi.org/10.5281/zenodo.4704867",
@@ -858,9 +861,6 @@
         },
         {
           "@id": "linksets/data/ops-rsc-surechembl-linksets/"
-        },
-        {
-          "@id": "https://doi.org/10.5281/zenodo.4707733"
         }
       ],
       "name": "data"
@@ -936,6 +936,14 @@
       "@type": "Dataset",
       "dateModified": "2021-04-20T12:37:11.519Z",
       "distribution": "https://repository.mygrid.org.uk/artifactory/ops/org/openphacts/data/ops-rsc-surechembl-linksets/0.20160224.0-SNAPSHOT/ops-rsc-surechembl-linksets-0.20160224.0-20160303.160141-2.data.zip",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/void_2016-02-24.ttl"
+        }
+      ],
       "identifier": "https://doi.org/10.5281/zenodo.4707733",
       "license": {
         "@id": "https://spdx.org/licenses/CC-BY-SA-3.0"
@@ -944,9 +952,77 @@
       "url": "https://github.com/openphacts/ops-surechembl-linksets"
     },
     {
-      "@id": "linksets/disgenet/",
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/",
       "@type": "Dataset",
       "dateModified": "2016-04-19T10:10:15.000Z",
+      "hasPart": [
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz"
+        },
+        {
+          "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_SURE_CHEMBL20160224.ttl.gz"
+        }
+      ],
+      "name": "SURE_CHEMBL"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_CHARGE_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_ISOTOPE_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "LINKSET_CLOSE_PARENT_CHILD_SUPER_INSENSITIVE_PARENT_SURE_CHEMBL20160224.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "LINKSET_EXACT_OPS_CHEMSPIDER_SURE_CHEMBL20160224.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "LINKSET_EXACT_SURE_CHEMBL20160224.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/SURE_CHEMBL/LINKSET_RELATED_PARENT_CHILD_FRAGMENT_SURE_CHEMBL20160224.ttl.gz",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "LINKSET_RELATED_PARENT_CHILD_FRAGMENT_SURE_CHEMBL20160224.ttl.gz"
+    },
+    {
+      "@id": "linksets/data/ops-rsc-surechembl-linksets/void_2016-02-24.ttl",
+      "@type": "File",
+      "dateModified": "2016-04-19T10:10:15.000Z",
+      "name": "void_2016-02-24.ttl"
+    },
+    {
+      "@id": "linksets/disgenet/",
+      "@type": "Dataset",
+      "dateModified": "2021-04-25T08:59:25.135Z",
       "hasPart": [
         {
           "@id": "linksets/disgenet/disgenetLinksets-NCBIGeneID-UniProt-VoID-20131220.ttl.gz"
