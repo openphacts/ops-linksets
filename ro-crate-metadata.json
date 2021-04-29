@@ -130,7 +130,8 @@
       "name": "OpenPHACTS Linksets 2.1.1",
       "publisher": {
         "@id": "https://ror.org/027m9bs27"
-      }
+      },
+      "url": "https://github.com/openphacts/ops-linksets"
     },
     {
       "@id": "#b056546b-46f1-4204-8e42-8625f07c1294",
